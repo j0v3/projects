@@ -1,0 +1,182 @@
+:root{
+
+    --primary-color: #fff;
+    --second-color: #AA53ED;
+    --gradiente: linear-gradient(180deg,rgba(75, 195, 242, 1) 0%, rgba(170, 83, 237, 0.88) 100%);
+    --font1: "Quintessential", sans-serif;
+    --font2: "Sulphur Point;", sans-serif;
+}
+
+.main-body{
+
+    background-color: var(--second-color);
+    background-image: var(--gradiente);
+
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+    min-width: 100vw;
+    
+    
+}
+
+.container{
+
+    margin: 0 auto;
+
+    width: calc(360px + 1vw);
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header{
+
+    margin-top: 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+.title-name{
+
+    font-size: calc(60px + 0.3vw);
+    font-family: var(--font1);
+    position: relative;
+
+    bottom: -30px;
+
+    color: var(--primary-color);
+
+}
+
+.img-profile{
+
+    width: calc(220px + 0.5vw);
+    height: calc(220px + 0.5vw);
+
+    border-radius: 100%;
+
+    box-shadow: 0px 30px 90px -30px ;
+
+}
+
+.social-links{
+
+    margin-top: 40px;
+    width: calc(200px + 0.1vw);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+.bi{
+
+    font-size: calc(42px + 0.5vw);
+
+    border-radius: 100%;
+
+    display: inline-block;
+
+    &:hover{
+
+        transform: scale(1.1);
+        text-shadow: 10px 0px 100px;
+
+    }
+
+}
+
+.bi-linkedin{
+
+    color: rgb(2, 70, 255);
+
+}
+
+.bi-instagram{
+
+    color: rgb(224, 0, 253);
+
+}
+
+.bi-github{
+
+    color: rgb(0, 0, 0);
+
+}
+
+.main-links{
+
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-main-links{
+
+    border-radius: 10px;
+
+    background-color: var(--second-color);
+
+    &:hover{
+
+        transform: scale(1.02);
+
+    }
+
+}
+
+.bi-three-dots-vertical, .bi-globe{
+
+    font-size: 32px;
+    color: black;
+    margin-left: 20px;
+
+}
+
+.main-links a{
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 15px 0px;
+
+    justify-content: space-between;
+    align-items: center;
+
+    width: calc(250px + 20vw);
+
+    text-decoration: none;
+
+}
+
+.name-link-main{
+
+    font-size: calc(30px + 0.3vw);
+    color: #ffffff;
+
+    font-family: var(--font2);
+
+}
+
+.name-footer{
+
+    margin-top: 50%;
+    font-family: var(--font2);
+
+    color: #fff;
+
+}

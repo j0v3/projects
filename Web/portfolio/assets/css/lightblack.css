@@ -1,0 +1,36 @@
+/*White Mode*/
+.second-card.white{
+
+    background-color: var(--light-mode-background);
+    color: var(--primary-color-light);
+
+}
+
+.bi-github.white{
+
+    color:#000000;
+
+}
+
+.bi-moon-fill.white{
+
+    display: none;
+
+}
+.bi-brightness-high-fill.white{
+
+    display: inline;
+
+}
+
+.bi-brightness-high-fill{
+
+    display: none; 
+
+}
+
+.list-item-link-menu.white{
+
+    color: var(--primary-color-light);
+
+}

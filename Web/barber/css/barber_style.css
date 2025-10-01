@@ -1,0 +1,533 @@
+/* General Settings */
+:root {
+
+    --primary-color: #000000;
+    --second-color: #D9D9D9;
+
+    --primary-font: macondo, serif, arial;
+    --second-font: roboto, sans-serif, arial;
+
+}
+
+html {
+
+    font-size: 16px;
+
+}
+
+body {
+
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    margin: 0;
+
+}
+
+h1, h2, h3, h4, h5 {
+
+    font-family: var(--primary-font);
+
+}
+
+p {
+
+    font-family: var(--second-font);
+    font-size: calc(0.7em + 1.1vw)
+
+}
+
+/* Mobile Settings */
+
+@media (min-width:300px) {
+
+    
+    /*General Settings*/
+    h1 {
+
+        font-size: calc(2.6em + 1vw);
+
+    }
+
+    h2 {
+
+        font-size: calc(2em + 1vw);
+
+    }
+
+    h3 {
+
+        font-size: calc(1.5em + 1vw);
+
+    }
+
+    h4 {
+
+        font-size: calc(1.2em + 1vw);
+
+    }
+
+
+    /*Specific Settigs*/
+    .header1 {
+
+        background-color: var(--second-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(70px + 1vw);
+        top: 0px;
+        left:0;
+        position: fixed;
+        min-width: 100vw;
+        z-index: 7;
+    }
+
+    .img-header-logo {
+
+        width: calc(100px + 2vw);
+        height: calc(100px + 2vw);
+
+    }
+
+    .title-header{
+
+        text-align: center;
+        margin-bottom: 0em;
+
+    }
+
+    .header2 {
+
+        min-width: 380px;
+        margin: 1em;
+        margin-top: calc(100px + 0.7vw);
+        display: flex;
+        gap: 1px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+   .p-header{
+
+        text-align: justify;
+        margin-top: 0.5em;
+        margin-bottom: 2em;
+
+    }
+    
+    
+
+
+    .call-link-header{
+        background-image: 
+        linear-gradient(90deg,rgba(222, 190, 9, 1) 50%, 
+        rgba(245, 245, 245, 1) 87%);
+        inline-size: calc(300px + 1.2vw);
+        block-size: calc(30px + 1.2vw);
+
+        border-radius: 17px;
+        
+        color: var(--primary-color);
+        font-weight: 900;
+
+        transform: scale(1.1);
+
+        & a{
+
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            font-size: calc(0.9em + 1vw);
+            text-decoration: none;
+            color: var(--primary-color);
+
+        }
+
+
+    }
+
+    /*Services Section*/
+    .services-section{
+        
+        margin: 0.5%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .services-section > :nth-child(1){
+
+        align-self: center;
+
+    }
+
+    /*Cards Section*/
+    .container-cards{
+
+        display: grid;
+        grid-template-columns: repeat(1, minmax(300px, 1fr)) ;
+        grid-auto-rows: minmax(300px, 1fr);
+        gap: calc(1em + 1vw);
+        margin: 1em;
+
+    }
+
+    .cards{
+
+        background-color: var(--second-color);
+        color: var(--primary-color);
+        display: flex;
+        flex-direction: column-reverse;
+        border-radius: 30px;
+        align-items: center;
+
+        & img{
+
+            max-width: 90%;
+            border-radius: 30px;
+            margin-top: 7%;
+
+        }
+
+    }
+
+    .container-infor-card{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .title-card, .value-card, .info-card, .card-call-link{
+
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        color: var(--primary-color);
+
+    }
+
+    .title-card{
+
+        margin: calc(0.2em + 1vw);
+        margin-bottom: 0.1em;
+
+    }
+
+    .value-card{
+
+        margin-bottom: calc(0.3em + 1vw);
+
+    }
+
+    .info-card{
+
+        margin: calc(2em + 1vw) ;
+        margin-top: 0;
+
+        font-size: calc(0.7em + 1vw);
+        text-align: justify;
+
+    }
+
+    .card-call-link{
+
+        background-image: 
+        linear-gradient(90deg,rgba(222, 190, 9, 1) 50%, 
+        rgba(245, 245, 245, 1) 87%);
+
+        inline-size: calc(150px + 1vw);
+        block-size: calc(30px + 1vw);
+
+        border-radius: 14px;
+        
+        color: var(--primary-color);
+        font-weight: 900;
+
+        font-size: calc(0.9em + 1vw);
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: calc(1em + 1vw);
+
+    }
+
+    /*Contact Section*/
+    .contact-section{
+
+        margin: 1em;
+        display: flex;
+        flex-direction: column;
+
+        & :nth-child(1){
+
+            align-self: center;
+
+        }
+
+    }
+    .section-contact-div{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .map-section{
+
+        height: 300px;
+        width: 370px;
+
+    }
+
+    .info-contact-section{
+
+        text-align: center;
+
+    }
+
+    .socials{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+    }
+
+    .bi{
+
+        fill:var(--second-color);
+        height: 40px;
+        width: 40px;
+
+    }
+
+    .bi-instagram:hover{
+
+        fill: #000000;
+        transform: scale(1.15);
+        border-radius: 100%;
+        background-color: #fa00c4;
+        
+
+    }
+
+    .bi-facebook:hover{
+
+        fill: #0400ff;
+        transform: scale(1.15);
+        border-radius: 100%;
+        background-color: #D9D9D9;
+
+    }
+
+    .bi-whatsapp:hover{
+
+        fill: #00ff00;
+        transform: scale(1.1);
+        border-radius: 100%;
+        background-color: #000000;
+
+    }
+
+    /*Footer Section*/
+    .footer-page{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: 0;
+        padding: 0;
+        margin-top: 40px;
+
+        background-color: var(--second-color);
+
+    }
+
+    .footer-logo img{
+
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+
+    }
+
+    .text-footer{
+
+        color: var(--primary-color);
+        font-size: small;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .blank{
+
+        width: 90px;
+        height: 10px;
+
+    }
+
+}
+
+/* Desktop Settings */
+
+@media (min-width:700px){
+
+    /*General Settings*/
+
+    h1{
+
+        font-size: calc(7em + 1vw);
+        margin: 0;
+        margin-top: 10px;
+
+    }
+
+    h2{
+
+        font-size: calc(2em + 1vw);
+
+    }
+
+    p{ font-size: 1.4em; }
+
+
+    /*Header Section*/
+
+    .header-container{
+
+        background-image: url(images/background-header-image-barber.png);
+        background-size: cover;
+        height: calc(500px + 15vw);
+
+
+    }
+
+    .header2{
+
+        align-items: flex-start;
+        margin-left: 3em;
+        margin-top: 89px;
+
+
+        & :nth-child(3){
+
+            margin-left: 10px;
+
+        }
+
+        & :nth-child(2){
+
+            max-width: 1080px;
+
+        }
+
+    }
+    
+    /*Services Section*/
+
+    .services-section{
+
+        :nth-child(2){
+
+            align-self: center;
+
+        }
+    }
+
+    .container-cards{
+
+        grid-template-columns: repeat(2, minmax(300px, 500px));
+        grid-auto-rows: minmax(300px, 1fr);
+        gap: calc(1em + 1.5vw);
+        margin-top: 0;
+        max-width: 1400px;
+
+        border: 20px;
+
+    }
+
+
+    .cards{
+
+        display: flex;
+        flex-direction: column-reverse;
+        border-radius: 30px;
+        align-items: center;
+
+        & img{
+
+            max-width: 50%;
+            border-radius: 30px;
+            margin-top: 7%;
+
+        }
+
+    }
+
+    .card-call-link{
+
+        inline-size: calc(190px + 1vw);
+        block-size: calc(30px + 1vw);
+
+        margin-top: 0;
+
+    }
+
+    /*Contact Section*/
+    .contact-section{
+
+        align-items: center;
+
+    }
+
+    .section-contact-div{
+
+        flex-direction: row;
+        gap: 70px;
+
+    }
+
+    .map-section{
+
+        width: 480px;
+        height: 400px;
+
+    }
+
+    .info-contact-section{
+
+        margin: 0;
+        padding: 0;
+
+        & h3{
+
+            margin: 0;
+            margin-bottom: 20px;
+
+        }
+
+    }
+
+    .info-card{
+
+        margin-bottom: 40px;
+
+    }
+
+}
