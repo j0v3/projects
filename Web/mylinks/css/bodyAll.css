@@ -4,8 +4,9 @@ body{
     flex-direction: column;
 
     align-items: center;
+    margin-top: 8%;
 
-    background-color: rgb(130, 36, 217);
+    background-color: rgb(196, 20, 227);
 
     gap: 2rem;
 

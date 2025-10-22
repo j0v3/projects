@@ -10,10 +10,9 @@
 
     text-decoration: none;
 
-    transition: 1s;
+    transition: 1.2s;
     display: inline-block;
 
     &:hover{ transform: scale(1.3);}
 
 }
-
