@@ -1,3 +1,9 @@
+:root{
+
+    --textColor: #7640a3;
+
+}
+
 body{
 
     display: flex;
@@ -6,8 +12,18 @@ body{
     align-items: center;
     margin-top: 8%;
 
-    background-color: rgb(196, 20, 227);
+    background-color: #7640a3;
 
     gap: 2rem;
+
+    font-family: 'Courier New', Courier, monospace;
+
+    width: 100%;
+
+}
+
+footer{
+
+    font-weight: 600;
 
 }
