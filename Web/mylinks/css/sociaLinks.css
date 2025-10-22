@@ -1,0 +1,19 @@
+#social-links{
+
+    display: flex;
+    gap: 10px;
+    
+}
+
+.linkSocial{
+    font-size: 2rem;
+
+    text-decoration: none;
+
+    transition: 1s;
+    display: inline-block;
+
+    &:hover{ transform: scale(1.3);}
+
+}
+

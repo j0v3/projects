@@ -1,0 +1,51 @@
+#contentHeader{
+
+    display: flex;
+
+    width: auto;
+
+    align-items: center;
+
+    gap: 1rem;
+
+}
+
+#img-profile{
+
+    width: 120px;
+    height: 120px;
+
+    border-radius: 100%;
+
+}
+
+#cardIdentify{
+
+    width: max-content;
+
+
+}
+
+h1{
+
+    font-size: 2rem;
+
+}
+
+h2{
+
+    font-size: 1.2rem;
+
+}
+
+/*Mexerá no header, em especifico no vloco que contem o header, no main*/
+
+#containerAll{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    align-items: center;
+
+}
