@@ -90,7 +90,7 @@
 
 }
 
-@media(max-width: 340px) {
+@media(max-width: 450px) {
 
     body {
 
@@ -105,7 +105,7 @@
 
     h1 {
 
-        font-size: calc(15rem - 170px);
+        font-size: calc(15rem - 180px);
         margin-bottom: -15px;
 
         font-weight: 600;
@@ -145,7 +145,7 @@ img{
 
 }
 
-@media(max-width: 320px) {
+@media(max-width: 340px) {
 
     body {
 
