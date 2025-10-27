@@ -8,6 +8,8 @@
 
     height: max-content;
 
+    transition: 1s;
+
 }
 
 #header1 {
@@ -37,11 +39,14 @@ h1 {
 
     font-weight: 600;
 
+    transition: 1s;
+
 }
 
 .subTitleHeader {
 
-    font-size: 4rem
+    font-size: 4rem;
+    transition: 1s;
 }
 
 #callActionHeader, .buttons{
