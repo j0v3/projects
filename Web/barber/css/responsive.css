@@ -89,3 +89,58 @@
     }
 
 }
+
+@media(max-width: 340px) {
+
+    body {
+
+        gap: 30px;
+
+    }
+
+    #header-container {
+
+        margin-top: 30px
+    }
+
+    h1 {
+
+        font-size: calc(15rem - 170px);
+        margin-bottom: -15px;
+
+        font-weight: 600;
+
+    }
+
+    .subTitleHeader {
+
+        font-size: 1.5rem
+    }
+
+    #fixedIcons {
+
+        display: none;
+    }
+
+    .cards{
+
+    width: 250px;
+    gap: 10px;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info-card{
+
+    width: 120px;
+}
+
+img{
+
+    height: 190px;
+
+}
+
+}
