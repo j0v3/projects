@@ -144,3 +144,31 @@ img{
 }
 
 }
+
+@media(max-width: 320px) {
+
+    body {
+
+        gap: 25px;
+
+    }
+
+    #header-container {
+
+        margin-top: 30px
+    }
+
+    h1 {
+
+        font-size: calc(15rem - 200px);
+
+
+    }
+
+    .subTitleHeader {
+
+        font-size: 1.4rem
+    }
+
+
+}
