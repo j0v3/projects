@@ -1,0 +1,105 @@
+img{
+
+    height: 260px;
+
+}
+
+h2{
+
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 10px;
+
+}
+
+h3{
+
+    font-size: 1.6rem;
+    font-weight: 600;
+
+}
+
+#container-main{
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+/*Cards Services*/
+
+#services-section{
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+#container-cards{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-infor-card{
+
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    text-align: center;
+
+}
+
+.cards{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+
+    gap: 10px;
+
+    border: 0.5px solid white;
+
+    padding: 20px;
+
+}
+
+.cardIntern{
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+
+    gap: 10px;
+
+}
+
+.value-card{
+
+    font-size: 1.3rem;
+
+}
+
+.info-card{
+
+    text-align: justify;
+    width: 130px;
+}
+
+/*Os buttons de chamada para ação dos cards está sendo modificado através da classe buttons
+que se encontra em header.css*/

@@ -1,0 +1,107 @@
+#header-container {
+
+    margin-top: 110px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: max-content;
+
+}
+
+#header1 {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 50px;
+
+}
+
+#titlesHead {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+h1 {
+
+    font-size: 15rem;
+    margin-bottom: -25px;
+
+    font-weight: 600;
+
+}
+
+.subTitleHeader {
+
+    font-size: 4rem
+}
+
+#callActionHeader, .buttons{
+
+    display: inline-block;
+
+    border: 2px solid white;
+
+    padding: 12px 30px 12px 30px;
+
+    transition: 1s;
+
+    text-decoration: none;
+
+    font-weight: 700;
+    color: aliceblue;
+
+    &:hover {
+
+        transform: scale(1.1);
+
+    }
+
+}
+
+#fixedIcons {
+
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    left: 20px;
+    top: 40vh;
+
+    gap: 10px
+}
+
+.linkIcons{
+
+    background-color: rgb(62, 56, 56);
+
+    width: max-content;
+    height: max-content;
+    border-radius: 100%;
+    display: inline-block;
+    text-decoration: none;
+    transition: 1.3s;
+
+    & .bi {
+
+        font-size: 30px;
+        color: var(--second-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.linkIcons:hover{
+
+    transform: scale(1.3);
+
+}

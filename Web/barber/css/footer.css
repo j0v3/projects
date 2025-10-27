@@ -1,0 +1,19 @@
+footer{
+
+    display: flex;
+    align-items: center;
+    gap: 200px;
+
+    margin-bottom: 20px;
+
+}
+
+#listHour{
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
