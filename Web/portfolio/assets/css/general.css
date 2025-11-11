@@ -1,7 +1,76 @@
-:root{}
+:root{
 
-body{
+    --colorPrincipal: #ff8c00;
+
+}
+
+body {
 
     font-family: "Nunito", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+#centralButtons nav{
+
+    display: flex;
+    justify-content: center;
+
+    padding: 10px 20px 10px 20px;
+
+    width: auto;
+
+    gap: 20px;
+    flex-wrap: wrap;
+
+    background-color: rgba(0, 0, 0, 0.673);
+
+    border-radius: 12px;
+
+    bottom: 80px;
+
+    right: 20%;
+    left: 20%;
+    position: absolute;
+
+}
+
+.menuButtonCentral {
+
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    color: rgb(255, 255, 255);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    transition: 1s;
+
+
+    &:hover {
+
+        transform: scale(1.1);
+
+        color: var(--colorPrincipal);
+
+    }
+
+}
+
+.Links{
+
+    text-decoration: none;
 
 }
