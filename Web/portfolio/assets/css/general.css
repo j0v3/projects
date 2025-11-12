@@ -14,8 +14,9 @@ body {
     flex-direction: column;
 
     justify-content: center;
+    align-items: center;
 
-    gap: 20px;
+    gap: 90px;
 }
 
 #centralButtons nav{
@@ -34,11 +35,11 @@ body {
 
     border-radius: 12px;
 
-    bottom: 80px;
+    bottom: 50px;
 
     right: 20%;
     left: 20%;
-    position: absolute;
+    position: fixed;
 
 }
 
