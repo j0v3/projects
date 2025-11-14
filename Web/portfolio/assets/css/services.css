@@ -277,7 +277,7 @@
 
 /*Adaptações Temporárias*/
 
-.serviceBlockButton{
+.serviceBlockButton, #centralButtons{
 
     display: none;
 
