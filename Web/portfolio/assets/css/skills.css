@@ -1,0 +1,70 @@
+#skills{
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 100px;
+
+    width: 55%;
+
+}
+
+#groupSkills{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 500px;
+
+}
+
+#groupSkills img{
+
+   height: 40px;
+   width: auto;
+
+}
+
+#blockSkillsInformation{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+
+    width: 500px;
+
+    background-color: blueviolet;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    color: black;
+
+    & a{
+
+        color: white;
+
+    }
+
+}
+
+.iconInformationSkills{
+
+    font-size: 40px;
+}
+
+#blockSkillsInformation p{
+
+    font-size: 1.1rem;
+
+    text-align: justify;
+
+}
