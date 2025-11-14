@@ -1,4 +1,4 @@
-#groupServices{
+#groupServices {
 
     display: grid;
     grid-template-columns: 420px 420px;
@@ -7,7 +7,7 @@
 
 }
 
-.serviceBlock{
+.serviceBlock {
 
     width: 400px;
     height: 350px;
@@ -28,26 +28,29 @@
 
 }
 
-.bi-pc-display, .bi-wordpress, .bi-house-gear-fill, .bi-signpost-2-fill{
+.bi-pc-display,
+.bi-wordpress,
+.bi-house-gear-fill,
+.bi-signpost-2-fill {
 
     font-size: 80px;
 
 }
 
-.serviceBlockIcon{
+.serviceBlockIcon {
 
     font-size: 5.5rem;
 
 }
 
-.serviceBlockTitle{
+.serviceBlockTitle {
 
     font-size: 1.9rem;
     font-weight: 700;
 
 }
 
-.serviceBlockDescription{
+.serviceBlockDescription {
 
     max-width: 370px;
 
@@ -55,7 +58,7 @@
 
 }
 
-.serviceBlockButton{
+.serviceBlockButton {
 
     text-align: center;
     color: var(--colorPrincipal);
@@ -94,7 +97,7 @@
 
 /*Service Informations*/
 
-.serviceInformations{
+.serviceInformations {
 
     display: flex;
     position: fixed;
@@ -106,31 +109,31 @@
 
     align-items: center;
     justify-content: center;
-   
+
 
 }
 
-.serviceInformationContainer{
+.serviceInformationContainer {
 
- width: 60%;
- height: 60%;
+    max-width: 45%;
+    max-height: 71%;
 
- background-color: #201f20;
- border: 2px solid var(--colorPrincipal);
+    background-color: #201f20;
+    border: 2px solid var(--colorPrincipal);
 
- border-radius: 12px;
+    border-radius: 12px;
 
- padding: 30px;
+    padding: 30px;
 
- display: flex;
+    display: flex;
 
- flex-direction: column;
+    flex-direction: column;
 
- gap: 40px;
+    gap: 30px;
 
 }
 
-.serviceInformationContainerTitles{
+.serviceInformationContainerTitles {
 
     display: flex;
 
@@ -140,35 +143,79 @@
 
 }
 
-.serviceInformationContainerContents{
+.serviceInformationContainerContentsMain {
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    column-gap: 100px;
-
-    grid-template-columns: auto 400px;
+    gap: 20px;
 
 }
 
-.serviceInformationContainerContentsLeftGrid{
+.serviceInformationContainerContentsMainGrid {
 
     display: grid;
 
-    gap: 50px;
+    gap: 30px;
 
     grid-template-columns: 300px 300px;
 
 }
 
-.serviceInformationContainerButtoms{
+.informationGridServices {
+
+    background-color: rgb(93, 93, 93);
+    color: var(--colorPrincipal);
+
+    border-radius: 12px;
 
     display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 150px;
+
+    gap: 10px;
+
+}
+
+.GridServiceIcon {
+
+    font-size: 3rem;
+
+}
+
+.informationGridServices h3 {
+
+    font-size: 1.3rem;
+    text-align: center;
+
+    font-weight: 700;
+
+}
+
+.informationGridServices p {
+
+    font-size: 0.9rem;
+    text-align: center;
+
+}
+
+.serviceInformationContainerButtoms {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
 
     gap: 30px;
 
 }
 
-.informationContainerButtons{
+.informationContainerButtons {
 
     display: inline-block;
     text-align: center;
@@ -188,7 +235,7 @@
 
     border: 1.5px solid var(--colorPrincipal);
 
-    
+
 
     &:hover {
 
@@ -206,29 +253,38 @@
 
 }
 
-.buttonGhost{
+.buttonGhost {
 
     background-color: rgba(255, 255, 255, 0);
-
-}
-
-/*Container Right*/
-
-.serviceInformationContainerContentsRight{
-
-    max-width: 300px;
-    height: 400px;
-
-    overflow: hidden;
-
-   
 
 }
 
 
 /*Controle displays*/
 
-.containerFront{}
-.containerWordpress{display: none;}
-.containerSuport{display: none;}
-.containerSoon{display: none;}
+.containerFront, .containerWordpress, .containerSuport, .containerSoon{
+    display: none;
+}
+
+/*Controle displays Active or Inactive*/
+
+.containerFront.active,
+.containerWordpress.active,
+.containerSuport.active,
+.containerSoon.active {
+    display: inline-flex;
+}
+
+/*Adaptações Temporárias*/
+
+.serviceBlockButton{
+
+    display: none;
+
+}
+
+.serviceBlock{
+
+    height: 300px;
+
+}
