@@ -1,7 +1,7 @@
 :root {
 
     --colorTeamA: #4CABD4;
-    --ColorTeamB: #036189;
+    --colorTeamB: #036189;
 
     --colorText1: #FFFFFF;
     --colorText2: #000000;
@@ -63,13 +63,8 @@
 
     background-color: #000000;
 
-    width: 200px;
+    width: 230px;
     height: 60px;
-
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
 
     text-decoration: none;
 
@@ -95,6 +90,42 @@ h1{
 
     font-size: 1.5rem;
     text-align: center;
+
+}
+
+#reset button{
+
+    font-size: 1.9rem;
+
+    color: var(--colorText1);
+
+    background-color: #000000;
+
+    width: 280px;
+    height: 70px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: 1s;
+
+    &:hover{
+
+        transform: scale(1.1);
+
+    }
+
+}
+
+#reset button, #centralLinkCoffe, .buttons{
+
+    font-family: "Jaldi";
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -153,6 +184,8 @@ h1{
     font-size: 8rem;
     font-weight: 600;
 
+    display: flex;
+
 }
 
 .countSets{
@@ -162,7 +195,7 @@ h1{
     align-items: center;
     justify-content: center;
 
-    padding: 20px;
+    padding: 10px;
 
 }
 
@@ -178,7 +211,9 @@ h1{
     font-size: 2rem;
     font-weight: 600;
 
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -191,4 +226,28 @@ h1{
 
 /*teamA*/
 
+.buttonsA, #containerSetA{
+
+    background-color: var(--colorTeamA);
+
+}
+
+#nameTeamA, #counterPointsA{
+
+    color:var(--colorTeamA)
+
+}
+
 /*teamB*/
+
+.buttonsB, #containerSetB{
+
+    background-color: var(--colorTeamB);
+
+}
+
+#nameTeamB, #counterPointsB{
+
+    color:var(--colorTeamB)
+
+}
