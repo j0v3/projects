@@ -17,8 +17,8 @@
     display: flex;
     flex-direction: column;
 
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 
     align-items: center;
     justify-content: center;
@@ -35,7 +35,6 @@
 
 #containerApp {
 
-    margin-top: 100px;
     
     width: 1198px;
     height: 728px;
