@@ -1,0 +1,24 @@
+@media(max-width: 1200px){
+
+
+    #containerApp{
+
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    .buttonsControlGroup{
+
+        flex-direction: row;
+
+    }
+
+    .buttons{
+
+        width: 200px;
+        height: 210px;
+
+    }
+
+}
