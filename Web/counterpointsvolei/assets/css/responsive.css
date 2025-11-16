@@ -1,4 +1,4 @@
-@media(max-width: 1200px){
+@media(max-width: 1300px){
 
 
     #containerApp{
@@ -75,7 +75,7 @@
 
     }
 
-    #reset button{
+    .reset button{
 
         width: 250px;
         height: 60px;
@@ -114,7 +114,7 @@
     }
 
 
-    #reset button{
+    .reset button{
 
         width: 220px;
         height: 50px;
@@ -182,7 +182,7 @@
     }
 
 
-    #reset button{
+    .reset button{
 
         width: 200px;
         height: 40px;
@@ -205,6 +205,18 @@
         width: 120px;
 
         text-align: center;
+
+    }
+
+    #reset{
+
+        display: none;
+
+    }
+
+    .resetNew{
+
+        display: inline-block;
 
     }
 

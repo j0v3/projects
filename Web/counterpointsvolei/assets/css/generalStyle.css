@@ -99,7 +99,7 @@ h1{
 
 }
 
-#reset button{
+.reset button{
 
     font-size: 1.9rem;
 
@@ -124,7 +124,7 @@ h1{
 
 }
 
-#reset button, #centralLinkCoffe, .buttons{
+.reset button, #centralLinkCoffe, .buttons{
 
     font-family: "Jaldi";
     font-weight: 700;
@@ -132,6 +132,12 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.resetNew{
+
+    display: none;
 
 }
 
