@@ -29,6 +29,8 @@
     font-family: "Jaldi", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
 
+    overflow: hidden;
+
 }
 
 #containerApp {
