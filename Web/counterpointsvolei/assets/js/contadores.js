@@ -84,7 +84,7 @@ buttonPlusB.addEventListener("click",()=>{
 
         /**O valores[3] se refere aos pontos do set do time B */
         valores[1] = 0
-        counterPointsA.textContent = valores[1];
+        counterPointsB.textContent = valores[1];
 
         valores[3] = plusElement(valores[3])
         containerSetB.textContent = valores[3];
