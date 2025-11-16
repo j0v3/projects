@@ -123,5 +123,89 @@
 
     }
 
+}
+
+@media (max-width: 1000px) and (orientation: landscape){
+
+ #containerApp{
+
+    margin-top: 20px;    
+    flex-direction: row;
+
+    }
+
+    .buttonsControlGroup{
+
+        flex-direction: column;
+
+    }
+
+    #contentCentral{
+
+        gap: 20px;
+        height: auto;
+
+    }
+
+    h1{
+
+        display: none;
+
+    }
+
+    .buttonsControlGroup{
+
+        gap: 5px;
+
+    }
+
+    .containerSets{
+
+
+        width: 100px;
+        height: 30px;
+
+    }
+    
+    .buttons{
+
+        width: 120px;
+        height: 65px;
+
+    }
+
+
+    #viewSituation{
+
+        font-size: 2rem;
+
+    }
+
+
+    #reset button{
+
+        width: 200px;
+        height: 40px;
+
+        font-size: 1.5rem;
+
+
+    }
+
+    .teams{
+
+        height: 300px;
+
+    }
+
+    #centralLinkCoffe{
+
+        font-size: 1.2rem;
+
+        width: 120px;
+
+        text-align: center;
+
+    }
 
 }
