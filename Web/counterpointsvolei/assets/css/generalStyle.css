@@ -310,6 +310,47 @@ h3 {
   }
 }
 
+@media (min-width: 917px) and (min-height: 312px) and (orientation: landscape) {
+  #contentCentral {
+    gap: 10px;
+  }
+
+  .counterPoints {
+    height: 140px;
+    font-size: 100px;
+  }
+
+  #centralLinkCoffe button {
+    width: 230px;
+    height: 50px;
+  }
+
+  #viewSituation {
+    font-size: 1.9rem;
+  }
+
+  .containerSets {
+    width: 90px;
+    height: 40px;
+  }
+
+  .resetMiddle {
+    display: block;
+
+    & button {
+      font-size: 1.5rem;
+
+      width: 230px;
+      height: 45px;
+    }
+  }
+
+  .buttonsA span,
+  .buttonsB span {
+    font-size: 50px;
+  }
+}
+
 @media (min-width: 917px) and (min-height: 412px) and (orientation: landscape) {
   .counterPoints {
     height: 200px;
