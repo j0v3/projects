@@ -1,94 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contador de Pontos - Vôlei</title>
 
-    <meta name="author" content="https://github.com/j0v3">
-    <meta name="description"
-        content="Esse é um contador de pontos de um jogo de vôlei, simples e sem anuncios, ele permite a juizes e jogadores monitorarem em qual set está e quantos pontos cada time fez.">
+    <meta name="author" content="https://github.com/j0v3" />
+    <meta
+      name="description"
+      content="Esse é um contador de pontos de um jogo de vôlei, simples e sem anuncios, ele permite a juizes e jogadores monitorarem em qual set está e quantos pontos cada time fez."
+    />
 
     <!--styles-->
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/generalStyle.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/generalStyle.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 
     <!--font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-</head>
+    <!--symbols-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
 
-<body id="app">
-
+  <body id="app">
     <div id="containerApp">
+      <div id="teamA" class="teams">
+        <div id="buttonsControlGroupA" class="buttonsControlGroup">
+          <button type="button" id="buttonMinusA" class="buttons buttonsA">
+            <span class="material-symbols-outlined icons iconReturn">
+              reply
+            </span>
+          </button>
+          <button id="counterPointsA" class="counterPoints buttonPlusA">
+            0
+          </button>
+        </div>
+      </div>
 
-        <div id="teamA" class="teams">
+      <div id="contentCentral">
+        <a id="centralLinkCoffe" href="">
+          <button>
+            <span class="material-symbols-outlined icons iconCoffee">
+              coffee </span
+            >Me ajude com um Café
+          </button></a
+        >
 
-            <div id="buttonsControlGroupA" class="buttonsControlGroup">
+        <div id="viewSituation">JOGO</div>
 
-                <button type="button" id="buttonMinusA" class="buttons buttonsA">-</button>
-                <div id="counterPointsA" class="counterPoints">0</div>
-                <button type="button" id="buttonPlusA" class="buttons buttonsA">+</button>
+        <h1>
+          Contador de Pontos <br />
+          Vôlei
+        </h1>
 
-            </div>
-
+        <div id="counterPointsGroup">
+          <h3>SETS</h3>
+          <div id="sets">
             <div id="countSetsA" class="countSets">
-
-                <div id="containerSetA" class="containerSets">0</div>
-                <p id="nameTeamA" class="nameTeams">A</p>
-
-            </div>
-
-        </div>
-
-        <div id="contentCentral">
-
-            <a id="centralLinkCoffe" href="">Ajude com um Café</a>
-            <div id="viewSituation">EMPATE</div>
-            <h1>Contador de Pontos <br /> Vôlei</h1>
-
-                <div class="reset resetNew">
-
-        <button type="button">RESET</button>
-
-    </div>
-
-        </div>
-
-        <div id="teamB" class="teams">
-
-            <div id="buttonsControlGroupB" class="buttonsControlGroup">
-
-                <button type="button" id="buttonMinusB" class="buttons buttonsB">-</button>
-                <div id="counterPointsB" class="counterPoints">0</div>
-                <button type="button" id="buttonPlusB" class="buttons buttonsB">+</button>
-
+              <div id="containerSetA" class="containerSets">0</div>
+              <p id="nameTeamA" class="nameTeams">A</p>
             </div>
 
             <div id="countSetsB" class="countSets">
-
-                <div id="containerSetB" class="containerSets">0</div>
-                <p id="nameTeamB" class="nameTeams">B</p>
-
+              <div id="containerSetB" class="containerSets">0</div>
+              <p id="nameTeamB" class="nameTeams">B</p>
             </div>
-
+          </div>
         </div>
 
-    </div>
+        <div class="reset resetMiddle">
+          <button type="button">
+            <span class="material-symbols-outlined icons iconReset">
+              autorenew
+            </span>
 
-    <div id="reset">
+            RESET
+          </button>
+        </div>
+      </div>
 
-        <button type="button">RESET</button>
+      <div id="teamB" class="teams">
+        <div id="buttonsControlGroupB" class="buttonsControlGroup">
+          <button type="button" id="buttonMinusB" class="buttons buttonsB">
+            <span class="material-symbols-outlined icons iconReturn">
+              reply
+            </span>
+          </button>
+          <button id="counterPointsB" class="counterPoints buttonPlusB">
+            0
+          </button>
+        </div>
+      </div>
 
+      <div class="reset resetBottom">
+        <button type="button">
+          <span class="material-symbols-outlined icons iconReset">
+            autorenew
+          </span>
+
+          RESET
+        </button>
+      </div>
     </div>
 
     <script src="assets/js/contadores.js"></script>
-
-</body>
-
+  </body>
 </html>

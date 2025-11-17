@@ -1,269 +1,341 @@
 :root {
+  --fonts: "Jardi", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  --colorText: #ffff;
+  --colorText2: #0000;
 
-    --colorTeamA: #4CABD4;
-    --colorTeamB: #036189;
-
-    --colorText1: #FFFFFF;
-    --colorText2: #000000;
-
-    --colorBackground: #FFFFFF;
-
+  --teamA: #4cabd4;
+  --teamB: #036189;
 }
 
-/*estrutura geral*/
-
+/*general configs*/
 #app {
+  display: flex;
+  flex-direction: column;
 
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  height: 100%;
 
-    height: 100vh;
-    width: 100vw;
+  position: absolute;
 
-    align-items: center;
-    justify-content: center;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
 
-
-    gap: 30px;
-
-    font-family: "Jaldi", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 600;
-
+  font-family: var(--fonts);
+  font-weight: 600;
 }
+
+button {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  font-family: var(--fonts);
+  font-weight: 600;
+
+  border: 0;
+  border-radius: 15px;
+
+  transition: 1s;
+
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+/*@media(min-width: 375px){*/
+
+/*base config*/
 
 #containerApp {
+  display: flex;
+  flex-direction: column;
 
-    
-    width: 1198px;
-    height: 728px;
+  justify-content: center;
+  align-items: center;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-/*central*/
-
-#contentCentral{
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: space-evenly;
-    align-items: center;
-
-    height: 100%;
-    width: 300px;
-
-}
-
-#centralLinkCoffe{
-
-    font-size: 1.5rem;
-
-    display: inline-flex;
-
-    color: var(--colorText1);
-
-    background-color: #000000;
-
-    width: 230px;
-    height: 60px;
-
-    text-decoration: none;
-
-    border-radius: 12px;
-
-    transition: 1s;
-
-    &:hover{
-
-        transform: scale(1.1);
-
-    }
-
-}
-
-#viewSituation{
-
-    font-size: 3.7rem;
-    transition: 1s;
-
-}
-
-h1{
-
-    font-size: 1.5rem;
-    text-align: center;
-
-}
-
-.reset button{
-
-    font-size: 1.9rem;
-
-    color: var(--colorText1);
-
-    background-color: #000000;
-
-    width: 280px;
-    height: 70px;
-
-    border-radius: 12px;
-
-    cursor: pointer;
-
-    transition: 1s;
-
-    &:hover{
-
-        transform: scale(1.1);
-
-    }
-
-}
-
-.reset button, #centralLinkCoffe, .buttons{
-
-    font-family: "Jaldi";
-    font-weight: 700;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.resetNew{
-
-    display: none;
-
-}
-
-
-/*teams*/
-
-.teams {
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 15px;
-
+  gap: 20px;
 }
 
 .buttonsControlGroup {
+  display: flex;
+  flex-direction: column;
 
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 10px;
-
+  gap: 20px;
 }
 
 .buttons {
-
-    width: 400px;
-    height: 140px;
-
-    border-radius: 12px;
-
-    border: none;
-
-    cursor: pointer;
-
-    transition: 1s;
-
-    color: var(--colorText1);
-    font-size: 6rem;
-
-    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.300);
-
-    &:hover {
-
-        transform: scale(1.1);
-
-    }
-
+  width: 250px;
+  height: 70px;
 }
 
 .counterPoints {
-
-    font-size: 8rem;
-    font-weight: 600;
-
-    display: flex;
-
-    transition: 1s;
-
+  height: 80px;
+  font-size: 70px;
 }
 
-.countSets{
+#contentCentral {
+  display: flex;
+  flex-direction: column;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  justify-content: center;
+  align-items: center;
 
-    padding: 10px;
-
-    transition: 1s;
-
+  gap: 20px;
 }
 
-.containerSets{
+#centralLinkCoffe {
+  text-decoration: none;
 
-    width: 130px;
-    height: 50px;
+  & button {
+    width: 230px;
+    height: 55px;
 
-    border-radius: 12px;
+    font-size: 1rem;
 
-    color: var(--colorText1);
-
-    font-size: 2rem;
-    font-weight: 600;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    background-color: #000000;
+    color: var(--colorText);
+  }
 }
 
-.nameTeams{
+#viewSituation {
+  font-size: 2rem;
+  transition: 1s;
+}
 
-    font-size: 2.2rem;
-    font-weight: 600;
+h1 {
+  font-size: 1rem;
+  text-align: center;
+  display: none;
+}
 
+#counterPointsGroup {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  align-items: center;
+}
+
+#sets {
+  display: flex;
+
+  gap: 10px;
+}
+
+.countSets {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  align-items: center;
+}
+
+.countSets,
+h3 {
+  font-size: 1.45rem;
+}
+
+.containerSets {
+  width: 100px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+}
+
+.reset button {
+  width: 250px;
+  height: 60px;
+
+  background-color: #000000;
+  color: var(--colorText);
+
+  font-size: 1.6rem;
+}
+
+.resetMiddle {
+  display: none;
+}
+
+.buttonsA span,
+.buttonsB span {
+  font-size: 50px;
 }
 
 /*teamA*/
 
-.buttonsA, #containerSetA{
-
-    background-color: var(--colorTeamA);
-
+#buttonMinusA,
+#counterPointsA,
+#containerSetA {
+  background-color: var(--teamA);
+  color: var(--colorText);
 }
 
-#nameTeamA, #counterPointsA{
-
-    color:var(--colorTeamA)
-
+#nameTeamA {
+  color: var(--teamA);
 }
 
 /*teamB*/
 
-.buttonsB, #containerSetB{
-
-    background-color: var(--colorTeamB);
-
+#buttonMinusB,
+#counterPointsB,
+#containerSetB {
+  background-color: var(--teamB);
+  color: var(--colorText);
 }
 
-#nameTeamB, #counterPointsB{
+#nameTeamB {
+  color: var(--teamB);
+}
 
-    color:var(--colorTeamB)
+/*}*/
 
+@media (min-width: 420px) {
+  /*general configs*/
+  #containerApp {
+    gap: 30px;
+  }
+
+  .buttonsControlGroup {
+    gap: 30px;
+  }
+
+  .buttons {
+    width: 300px;
+    height: 80px;
+  }
+
+  .counterPoints {
+    height: 100px;
+    font-size: 100px;
+  }
+
+  #contentCentral {
+    gap: 25px;
+  }
+
+  #viewSituation {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 712px) and (orientation: landscape) {
+  /*general configs*/
+  #app {
+    flex-direction: row;
+  }
+
+  #containerApp {
+    flex-direction: row;
+
+    min-height: 300px;
+  }
+
+  .resetMiddle {
+    display: block;
+  }
+
+  .resetBottom {
+    display: none;
+  }
+
+  .buttons {
+    width: 200px;
+    height: 80px;
+  }
+
+  .counterPoints {
+    width: 200px;
+    height: 130px;
+  }
+
+  .reset button {
+    height: 50px;
+  }
+
+  #centralLinkCoffe {
+    & button {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (min-width: 800px) and (min-height: 800px) {
+  /*general configs*/
+
+  #app {
+    flex-direction: row;
+  }
+
+  #containerApp {
+    flex-direction: row;
+
+    min-height: 300px;
+  }
+
+  .buttons {
+    width: 220px;
+    height: 110px;
+  }
+
+  .counterPoints {
+    width: 220px;
+    height: 250px;
+    font-size: 120px;
+  }
+
+  .resetMiddle {
+    display: block;
+  }
+
+  .resetBottom {
+    display: none;
+  }
+
+  .buttonsA span,
+  .buttonsB span {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 917px) and (min-height: 412px) and (orientation: landscape) {
+  .counterPoints {
+    height: 200px;
+    font-size: 120px;
+  }
+
+  .buttonsA span,
+  .buttonsB span {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .buttons {
+    width: 420px;
+    height: 140px;
+  }
+
+  .counterPoints {
+    width: 420px;
+    height: 508px;
+    font-size: 200px;
+  }
+
+  .buttonsA span,
+  .buttonsB span {
+    font-size: 92px;
+  }
 }
