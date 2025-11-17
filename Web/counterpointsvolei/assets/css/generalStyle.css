@@ -310,7 +310,7 @@ h3 {
   }
 }
 
-@media (min-width: 917px) and (min-height: 312px) and (orientation: landscape) {
+@media (min-width: 917px) and (min-height: 292px) and (orientation: landscape) {
   #contentCentral {
     gap: 10px;
   }
