@@ -1,106 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contador de Pontos - Vôlei</title>
 
-    <meta name="author" content="https://github.com/j0v3" />
-    <meta
-      name="description"
-      content="Esse é um contador de pontos de um jogo de vôlei, simples e sem anuncios, ele permite a juizes e jogadores monitorarem em qual set está e quantos pontos cada time fez."
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contador de Pontos - Vôlei</title>
 
-    <!--styles-->
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/generalStyle.css" />
+  <link rel="shortcut icon" href="assets/imgs/volleyball-25782_640.png" type="image/png">
 
-    <!--font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+  <meta name="author" content="https://github.com/j0v3" />
+  <meta name="description"
+    content="Esse é um contador de pontos de um jogo de vôlei, simples e sem anuncios, ele permite a juizes e jogadores monitorarem em qual set está e quantos pontos cada time fez." />
 
-    <!--symbols-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
-  </head>
+  <!--styles-->
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/generalStyle.css" />
 
-  <body id="app">
-    <div id="containerApp">
-      <div id="teamA" class="teams">
-        <div id="buttonsControlGroupA" class="buttonsControlGroup">
-          <button type="button" id="buttonMinusA" class="buttons buttonsA">
-            <span class="material-symbols-outlined icons iconReturn">
-              reply
-            </span>
-          </button>
-          <button id="counterPointsA" class="counterPoints buttonPlusA">
-            0
-          </button>
-        </div>
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!--symbols-->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body id="app">
+  <div id="containerApp">
+    <div id="teamA" class="teams">
+      <div id="buttonsControlGroupA" class="buttonsControlGroup">
+        <button type="button" id="buttonMinusA" class="buttons buttonsA">
+          <span class="material-symbols-outlined icons iconReturn">
+            reply
+          </span>
+        </button>
+        <button id="counterPointsA" class="counterPoints buttonPlusA">
+          0
+        </button>
       </div>
+    </div>
 
-      <div id="contentCentral">
-        <a id="centralLinkCoffe" href="">
-          <button>
-            <span class="material-symbols-outlined icons iconCoffee">
-              coffee </span
-            >Me ajude com um Café
-          </button></a
-        >
+    <div id="contentCentral">
+      <a id="centralLinkCoffe" href="">
+        <button>
+          <span class="material-symbols-outlined icons iconCoffee">
+            coffee </span>Me ajude com um Café
+        </button></a>
 
-       <!--<div id="viewSituation">JOGO</div>--> 
+      <!--<div id="viewSituation">JOGO</div>-->
+      <!--Tamanho máximo de nome de times 14 caracteres-->
 
-        <h1>
-          Contador de Pontos <br />
-          Vôlei
-        </h1>
+      <h1>
+        Contador de Pontos <br />
+        Vôlei
+      </h1>
 
-        <div id="counterPointsGroup">
-          <h3>SETS</h3>
-          <div id="sets">
-            <div id="countSetsA" class="countSets">
-              <div id="containerSetA" class="containerSets">0</div>
-              <p id="nameTeamA" class="nameTeams">A</p>
-            </div>
+      <div id="counterPointsGroup">
+        <h3>SETS</h3>
+        <div id="sets">
+          <div id="countSetsA" class="countSets">
+            <div id="containerSetA" class="containerSets">0</div>
+            <p id="nameTeamA" class="nameTeams"><span id="nameEditA">A</span><span class="material-symbols-outlined">
+                edit_square
+              </span></p>
+          </div>
 
-            <div id="countSetsB" class="countSets">
-              <div id="containerSetB" class="containerSets">0</div>
-              <p id="nameTeamB" class="nameTeams">B</p>
-            </div>
+          <div id="countSetsB" class="countSets">
+            <div id="containerSetB" class="containerSets">0</div>
+            <p id="nameTeamB" class="nameTeams"><span id="nameEditB">B</span><span class="material-symbols-outlined">
+                edit_square
+              </span></p>
           </div>
         </div>
-
-        <div class="reset resetMiddle">
-          <button type="button">
-            <span class="material-symbols-outlined icons iconReset">
-              autorenew
-            </span>
-
-            RESET
-          </button>
-        </div>
       </div>
 
-      <div id="teamB" class="teams">
-        <div id="buttonsControlGroupB" class="buttonsControlGroup">
-          <button type="button" id="buttonMinusB" class="buttons buttonsB">
-            <span class="material-symbols-outlined icons iconReturn">
-              reply
-            </span>
-          </button>
-          <button id="counterPointsB" class="counterPoints buttonPlusB">
-            0
-          </button>
-        </div>
-      </div>
-
-      <div class="reset resetBottom">
+      <div class="reset resetMiddle">
         <button type="button">
           <span class="material-symbols-outlined icons iconReset">
             autorenew
@@ -111,6 +85,64 @@
       </div>
     </div>
 
-    <script src="assets/js/contadores.js"></script>
-  </body>
+    <div id="teamB" class="teams">
+      <div id="buttonsControlGroupB" class="buttonsControlGroup">
+        <button type="button" id="buttonMinusB" class="buttons buttonsB">
+          <span class="material-symbols-outlined icons iconReturn">
+            reply
+          </span>
+        </button>
+        <button id="counterPointsB" class="counterPoints buttonPlusB">
+          0
+        </button>
+      </div>
+    </div>
+
+    <div class="reset resetBottom">
+      <button type="button">
+        <span class="material-symbols-outlined icons iconReset">
+          autorenew
+        </span>
+
+        RESET
+      </button>
+    </div>
+  </div>
+
+  <form class="insertTeams" action="">
+
+    <div id="structureForm">
+
+      <p>Nome dos Times</p>
+      <div class="groupForm">
+
+
+
+        <label for="timeA" class="timeA">A</label>
+        <input id="timeA" class="timeA" type="text" maxlength="14" placeholder="Time A">
+
+      </div>
+      <div class="groupForm">
+
+        <label for="timeB">B</label>
+        <input id="timeB" class="timeB" type="text" maxlength="14" placeholder="Time B">
+
+      </div>
+
+      <div class="groupForm groupFormButtons">
+
+        <button type="button">Renomear</button>
+        <button type="button">Sair</button>
+
+      </div>
+    </div>
+
+
+
+
+  </form>
+
+  <script src="assets/js/contadores.js"></script>
+</body>
+
 </html>

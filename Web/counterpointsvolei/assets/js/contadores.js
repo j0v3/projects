@@ -1,18 +1,25 @@
-buttonMinusA = document.getElementById("buttonMinusA");
-counterPointsA = document.getElementById("counterPointsA");
-buttonPlusA = document.getElementById("buttonPlusA");
-containerSetA = document.getElementById("containerSetA");
+/**section A */
+buttonMinusA = document.querySelector("#buttonMinusA");
+counterPointsA = document.querySelector("#counterPointsA");
+buttonPlusA = document.querySelector(".buttonPlusA");
+containerSetA = document.querySelector("#containerSetA");
+nameEditA = document.querySelector("#nameEditA");
 
-viewSituation = document.getElementById("viewSituation");
 
-buttonMinusB = document.getElementById("buttonMinusB");
-counterPointsB = document.getElementById("counterPointsB");
-buttonPlusB = document.getElementById("buttonPlusB");
-containerSetB = document.getElementById("containerSetB");
+/**viewSituation = document.querySelector("#viewSituation");*/
+insertTeams = document.querySelector(".insertTeams");
+
+/**section B */
+buttonMinusB = document.querySelector("#buttonMinusB");
+counterPointsB = document.querySelector("#counterPointsB");
+buttonPlusB = document.querySelector(".buttonPlusB");
+containerSetB = document.querySelector("#containerSetB");
+nameEditB = document.querySelector("#nameEditB");
 
 /**teamA, teamB, SetA, SetB */
 
 let valores = [0,0,0,0];
+let nameTeams = ["Time A", "Time B"];
 
 function plusElement(valor){
 
@@ -34,6 +41,8 @@ function minusElement(valor){
     }
 
 };
+
+
 
 /**TeamA */
 /**O valores[0] se refere aos pontos do TeamA */

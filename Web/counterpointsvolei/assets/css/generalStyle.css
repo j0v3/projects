@@ -5,7 +5,7 @@
   --colorText2: #0000;
 
   --teamA: #4cabd4;
-  --teamB: #036189;
+  --teamB: #af3010;
 }
 
 /*general configs*/
@@ -116,6 +116,10 @@ h1 {
   display: none;
 }
 
+h3 {
+  display: none;
+}
+
 #counterPointsGroup {
   display: flex;
   flex-direction: column;
@@ -172,6 +176,105 @@ h3 {
 .buttonsA span,
 .buttonsB span {
   font-size: 50px;
+}
+
+/*modificar o nome dos times conforme vontade dos usuários*/
+.nameTeams {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: min-content;
+
+  flex-wrap: wrap;
+
+  text-align: center;
+
+  gap: 2px;
+}
+
+.insertTeams{
+
+  display: none;
+
+}
+
+.insertTeams.active {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#structureForm {
+  display: flex;
+  flex-direction: column;
+
+  width: 290px;
+  height: 210px;
+
+  background-color: rgba(150, 142, 142, 0.87);
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+
+  gap: 10px;
+}
+
+#structureForm p {
+  font-size: 1.3rem;
+  color: var(--colorText);
+}
+
+#structureForm .groupForm label {
+  font-size: 1.2rem;
+  display: none;
+}
+
+#structureForm .groupForm input {
+  width: 150px;
+  height: 30px;
+
+  border-radius: 12px;
+
+  border: 0;
+}
+
+#timeA,
+.timeA {
+  color: var(--teamA);
+  text-align: center;
+
+  font-size: 1rem;
+}
+
+#timeB,
+.timeB {
+  color: var(--teamB);
+  text-align: center;
+
+  font-size: 1rem;
+}
+
+.groupFormButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.groupFormButtons button {
+  min-width: 60px;
+  height: 40px;
 }
 
 /*teamA*/
@@ -378,5 +481,9 @@ h3 {
   .buttonsA span,
   .buttonsB span {
     font-size: 92px;
+  }
+
+  h3 {
+    display: block;
   }
 }
