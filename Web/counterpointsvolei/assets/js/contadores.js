@@ -21,6 +21,9 @@ nameEditB = document.querySelector("#nameEditB");
 nameTeamA = document.querySelector("#nameTeamA");
 nameTeamB = document.querySelector("#nameTeamB");
 
+resetMiddle = document.querySelector(".resetMiddle");
+resetBottom = document.querySelector(".resetBottom");
+
 /**teamA, teamB, SetA, SetB, valor para ganhar*/
 let valores = [0, 0, 0, 0, 25];
 let nameTeams = ["Time A", "Time B"];
@@ -76,15 +79,25 @@ function alteraNomes(nameTeams, timeA, timeB) {
   }
 }
 
-function fechaAbrePopUp(popupActive){
-
+function fechaAbrePopUp(popupActive) {
   popupActive.classList.toggle("active");
-
 }
 
 function exibeNovosNomes(nameTeams) {
   nameEditA.textContent = nameTeams[0];
   nameEditB.textContent = nameTeams[1];
+  return;
+}
+
+function resetarDados(nameTeams, valores) {
+  valores[0] = 0;
+  valores[1] = 0;
+  valores[2] = 0;
+  valores[3] = 0;
+  valores[4] = 25;
+
+  nameTeams[0] = "Time A";
+  nameTeams[1] = "Time B";
   return;
 }
 
@@ -108,25 +121,27 @@ buttonMinusB.addEventListener("click", () => {
   checkEnd();
   updateDisplay(valores);
 });
-renameTeams.addEventListener("click", ()=>{
-
+renameTeams.addEventListener("click", () => {
   alteraNomes(nameTeams, timeA.value, timeB.value);
   exibeNovosNomes(nameTeams);
   fechaAbrePopUp(insertTeams);
-
 });
-closePopupTeams.addEventListener("click", ()=>{
-
+closePopupTeams.addEventListener("click", () => {
   fechaAbrePopUp(insertTeams);
-
 });
-nameTeamA.addEventListener("click", ()=>{
-
+nameTeamA.addEventListener("click", () => {
   fechaAbrePopUp(insertTeams);
-
-})
-nameTeamB.addEventListener("click", ()=>{
-
+});
+nameTeamB.addEventListener("click", () => {
   fechaAbrePopUp(insertTeams);
-
-})
+});
+resetMiddle.addEventListener("click", () => {
+  resetarDados(nameTeams, valores);
+  exibeNovosNomes(nameTeams);
+  updateDisplay(valores);
+});
+resetBottom.addEventListener("click", () => {
+  resetarDados(nameTeams, valores);
+  exibeNovosNomes(nameTeams);
+  updateDisplay(valores);
+});
