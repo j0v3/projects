@@ -34,7 +34,7 @@
             reply
           </span>
         </button>
-        <button id="counterPointsA" class="counterPoints buttonPlusA">
+        <button id="counterPointsA" class="counterPoints buttonPlusA" type="button">
           0
         </button>
       </div>
@@ -59,14 +59,14 @@
         <h3>SETS</h3>
         <div id="sets">
           <div id="countSetsA" class="countSets">
-            <div id="containerSetA" class="containerSets">0</div>
+            <div id="containerSetA" class="containerSets"><span id="containerSetAN">0</span></div>
             <p id="nameTeamA" class="nameTeams"><span id="nameEditA">A</span><span class="material-symbols-outlined">
                 edit_square
               </span></p>
           </div>
 
           <div id="countSetsB" class="countSets">
-            <div id="containerSetB" class="containerSets">0</div>
+            <div id="containerSetB" class="containerSets"><span id="containerSetBN">0</span></div>
             <p id="nameTeamB" class="nameTeams"><span id="nameEditB">B</span><span class="material-symbols-outlined">
                 edit_square
               </span></p>
@@ -92,7 +92,7 @@
             reply
           </span>
         </button>
-        <button id="counterPointsB" class="counterPoints buttonPlusB">
+        <button type="button" id="counterPointsB" class="counterPoints buttonPlusB">
           0
         </button>
       </div>
@@ -116,8 +116,6 @@
       <p>Nome dos Times</p>
       <div class="groupForm">
 
-
-
         <label for="timeA" class="timeA">A</label>
         <input id="timeA" class="timeA" type="text" maxlength="14" placeholder="Time A">
 
@@ -131,8 +129,8 @@
 
       <div class="groupForm groupFormButtons">
 
-        <button type="button">Renomear</button>
-        <button type="button">Sair</button>
+        <button type="button" id="renameTeams">Renomear</button>
+        <button type="button" id="closePopupTeams">Sair</button>
 
       </div>
     </div>

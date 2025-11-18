@@ -191,6 +191,13 @@ h3 {
   text-align: center;
 
   gap: 2px;
+  transition: 1s;
+
+  &:hover{
+
+    cursor: pointer;
+
+  }
 }
 
 .insertTeams{
