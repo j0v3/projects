@@ -66,7 +66,7 @@ function minus(valor) {
 }
 
 function alteraNomes(nameTeams, timeA, timeB) {
-  if (timeA == null || timeA == "") {
+  /**if (timeA == null || timeA == "") {
     nameTeams[0] = nameTeams[0];
     return;
   } else if (timeB == null || timeB == "") {
@@ -76,7 +76,10 @@ function alteraNomes(nameTeams, timeA, timeB) {
     nameTeams[0] = timeA;
     nameTeams[1] = timeB;
     return;
-  }
+  }*/
+
+    nameTeams[0] = timeA;
+    nameTeams[1] = timeB;
 }
 
 function fechaAbrePopUp(popupActive) {
