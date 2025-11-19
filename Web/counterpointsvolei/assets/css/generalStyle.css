@@ -193,17 +193,13 @@ h3 {
   gap: 2px;
   transition: 1s;
 
-  &:hover{
-
+  &:hover {
     cursor: pointer;
-
   }
 }
 
-.insertTeams{
-
+.insertTeams {
   display: none;
-
 }
 
 .insertTeams.active {
@@ -237,6 +233,8 @@ h3 {
   border-radius: 15px;
 
   gap: 10px;
+
+  transition: 1s;
 }
 
 #structureForm p {
@@ -256,6 +254,8 @@ h3 {
   border-radius: 12px;
 
   border: 0;
+
+  transition: 1s;
 }
 
 #timeA,
@@ -308,6 +308,22 @@ h3 {
 
 #nameTeamB {
   color: var(--teamB);
+}
+
+#centralLinkCoffe,
+.reset {
+  & :hover {
+    cursor: pointer;
+  }
+}
+
+#buttonMinusA,
+#counterPointsA,
+#buttonMinusB,
+#counterPointsB {
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 /*}*/
@@ -379,6 +395,21 @@ h3 {
     & button {
       font-size: 0.9rem;
     }
+  }
+
+  #structureForm {
+    width: 300px;
+    height: 220px;
+  }
+
+  #structureForm p {
+    font-size: 1.5rem;
+    color: var(--colorText);
+  }
+
+  #structureForm .groupForm input {
+    width: 170px;
+    height: 40px;
   }
 }
 
