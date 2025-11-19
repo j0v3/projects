@@ -39,9 +39,9 @@ O VoleiScore foi projetado para ser intuitivo e seguir as regras básicas de pon
 
 Aqui você pode adicionar as capturas de tela que você irá tirar.
 
-|                                    Mobile (Prioridade)                                     |                                              Desktop                                              |
-|:------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------:|
-| ![VoleiScore Mobile](assets/imgs/Captura de tela 2025-11-19 170115.png) | ![VoleiScore - Desktop](assets/imgs/Captura de tela 2025-11-19 170047.png) |
+|                           Mobile (Prioridade)                            |                                              Desktop                                              |
+|:------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------:|
+| ![VoleiScore Mobile](Web/counterpointsvolei/assets/imgs/Captura de tela 2025-11-19 170115.png) | ![VoleiScore - Desktop](Web/counterpointsvolei/assets/imgs/Captura de tela 2025-11-19 170047.png) |
 
 ----
 *Busca um desenvolvedor para seu projeto? Entre em contato pelo meu [**email**](mailto:zjrvl9jsr@mozmail.com).*
