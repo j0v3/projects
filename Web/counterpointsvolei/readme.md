@@ -67,12 +67,6 @@ O projeto pode vir a ter novas funcionalidades:
 
 -----
 
-## ☕ Apoie o Desenvolvedor
-
-Este projeto é um esforço pessoal para testar e aprimorar minhas habilidades. Seu apoio me incentiva a desenvolver e manter este e futuros projetos que requerem tempo e atenção\!
-
-* [**Buy Me a Coffee**](https://buymeacoffee.com/jnundev*)
-
 ## 🌐 Conecte-se Comigo
 
 * [**GitHub**](https://github.com/j0v3)
