@@ -44,7 +44,7 @@ Aqui você pode adicionar as capturas de tela que você irá tirar.
 | ![VoleiScore Mobile](assets/imgs/202511191700479.png) | ![VoleiScore - Desktop](assets/imgs/20251119170047.png) |
 
 ----
-*Busca um desenvolvedor para seu projeto? Entre em contato pelo meu [**email**](mailto:zjrvl9jsr@mozmail.com).*
+*Busca um desenvolvedor para seu projeto? Entre em contato pelo meu [**email**](mailto:contato@jnundev.com).*
 
 ---
 
