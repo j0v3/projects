@@ -52,7 +52,7 @@ Aqui você pode adicionar as capturas de tela que você irá tirar.
 
 O VoleiScore não requer instalação e roda diretamente no seu navegador. É **gratuito para todos**\!
 
-1.  **Acesso:** Clique neste link para acessar a aplicação: [**VoleiScore - Clique e Use Agora\!**](https://j0v3.github.io/projects/Web/counterpointsvolei/)
+1.  **Acesso:** Clique neste link para acessar a aplicação: [**VoleiScore - Clique e Use Agora\!**](https://j0v3.github.io/projects/counterpointsvolei/)
 2.  **Comece a Contar:** Basta tocar ou clicar no placar do time que fez o ponto.
 
 -----
